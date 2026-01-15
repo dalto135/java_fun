@@ -2,19 +2,19 @@ package mainPackage;
 
 public class Main {
     public static void main(String[] args) {
-        String statement = helloMethod();
+        int big = 5;
+        int small = 3;
+
+        String statement = equalityMethod(big, small);
 
         System.out.println(statement);
     }
 
-    public static String helloMethod() {
-        boolean truthPoop = 5 > 3;
-        boolean falsehoodPoop = 3 > 5;
-
+    public static String equalityMethod(int num1, int num2) {
         String statement;
 
-        if (truthPoop && falsehoodPoop) {
-            statement = "both true";
+        if (num1 == num2) {
+            statement = "equal!";
         }
         else {
             statement = "better luck next time fucko";
