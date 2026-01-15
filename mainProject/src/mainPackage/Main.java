@@ -8,6 +8,11 @@ public class Main {
         String statement = equalityMethod(big, small);
 
         System.out.println(statement);
+        System.out.println();
+
+        for (String arg: args) {
+            System.out.println(arg);
+        }
     }
 
     public static String equalityMethod(int num1, int num2) {
