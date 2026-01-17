@@ -1,12 +1,23 @@
 package mainPackage;
 
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
-        int big = 5;
-        int small = 3;
+        Scanner scanner = new Scanner(System.in);
 
-        String statement = equalityMethod(big, small);
+        System.out.println("Enter a number:");
+        String firstString = scanner.nextLine();
 
+        System.out.println("Enter another number:");
+        String secondString = scanner.nextLine();
+
+        int firstNumber = Integer.parseInt(firstString);
+        int secondNumber = Integer.parseInt(secondString);
+
+        String statement = equalityMethod(firstNumber, secondNumber);
+
+        System.out.println();
         System.out.println(statement);
         System.out.println();
 
@@ -22,7 +33,7 @@ public class Main {
             statement = "equal!";
         }
         else {
-            statement = "better luck next time fucko";
+            statement = "unequal, better luck next time fucko";
         }
 
         return statement;
