@@ -24,6 +24,27 @@ public class Main {
         for (String arg: args) {
             System.out.println(arg);
         }
+
+        StringBuilder sb = new StringBuilder();
+        sb.append(firstNumber);
+        sb.append(", ");
+        sb.append(secondNumber);
+        String sbs = sb.toString();
+        System.out.println(sbs);
+
+        MyClass yee = new MyClass();
+        int myInt = yee.getHello();
+
+        System.out.println();
+        System.out.println("My Class:");
+        System.out.println(myInt);
+
+        yee.setHello(4);
+        myInt = yee.getHello();
+
+        System.out.println();
+        System.out.println("My Class again:");
+        System.out.println(myInt);
     }
 
     public static String equalityMethod(int num1, int num2) {
